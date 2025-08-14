@@ -1,0 +1,59 @@
+name : run3
+base_dir : /leonardo/home/userexternal/tbarnie0/infer/mnt/runs/
+fall3d : 
+  file : /leonardo/home/userexternal/tbarnie0/infer/mnt/examples/default_so2_reykjanes2.inp
+  exe : /fall3d/build/bin/Fall3d.x
+station : 
+  file : /leonardo/home/userexternal/tbarnie0/infer/mnt/examples/stations2.pts
+area:
+  latmin : 63.7
+  latmax : 64.2
+  lonmin : -23.0
+  lonmax : -21.5
+date : 
+  year : 2021
+  month : 4
+  day : 7
+  start_hour : 0
+  end_hour : 24
+flux :
+  priors:
+    lower: 0.0
+    upper : 100.0
+    mu :
+      loc : 100.0
+      scale : 10.0
+    sigma :
+      loc : 20.0
+      scale : 1.0
+height : 
+  lut:
+    n : 40
+    min : 0.0
+    max : 4000.0
+  priors :
+    lower : 0.0
+    upper : 4000.0
+    mu :
+      loc : 400.0
+      scale : 100.0
+    sigma :
+      loc : 200.0
+      scale : 10.0
+pc1:
+  lut :
+    n : 10
+#    min :
+#    max : 
+#  priors :
+#    loc :
+#    scale :
+#    lower :
+#    upper :
+sigma_conc :
+  priors :
+    loc : 10.0
+    scale : 5.0
+    lower : 0.0
+  
+

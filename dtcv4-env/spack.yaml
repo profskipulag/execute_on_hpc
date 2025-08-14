@@ -1,0 +1,50 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - fall3d
+  - compss
+  - py-pymc
+  - py-pytensor
+  - py-toml
+  - py-numpy
+  - py-dask
+  - py-xarray
+  - py-logical-unification
+  - py-multipledispatch
+  - py-matplotlib
+  - py-typing-extensions
+  - py-xarray-einstats
+  - py-cachetools
+  - py-rich
+  - py-threadpoolctl
+  - openjdk@11
+  - py-arviz@0.21.0
+  - py-cdsapi@0.7.5
+  - py-scipy@1.12
+  - py-requests
+  - py-tqdm
+  - py-cartopy
+  - py-cfgrib
+  - py-eccodes
+  - py-netcdf4
+  - feh
+  - py-h5netcdf
+  view: true
+  concretizer:
+    unify: true
+  repos:
+  - /leonardo/home/userexternal/tbarnie0/dtcv4-repo
+  packages:
+    gcc:
+      externals:
+      - spec: gcc@8.5.0 languages='c,c++,fortran'
+        prefix: /usr
+        extra_attributes:
+          compilers:
+            c: /usr/bin/gcc
+            cxx: /usr/bin/g++
+            fortran: /usr/bin/gfortran
