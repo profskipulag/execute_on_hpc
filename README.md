@@ -14,13 +14,13 @@ Then set up and install the environment ...
 cd execute_on_hpc
 
 spack env activate dtcv4-env -p
-
 ```
 ... add the custom repository for packages missing from the default spack install ...
 
-spack repo add dtcv4-repo
-
 ```
+spack repo add dtcv4-repo
+```
+
 
 And finally, concretize and install.
 
