@@ -33,6 +33,17 @@ spack:
   - py-netcdf4
   - feh
   - py-h5netcdf
+  - py-nest-asyncio
+  - cmake
+  - py-setuptools
+  - py-poetry@2.1.4
+  - py-pystan@3.10.0
+  - py-poetry-core@2.1.3
+  - py-httpstan
+  - py-pysimdjson
+  - py-clikit
+  - py-datapi
+  - py-geopandas
   view: true
   concretizer:
     unify: true
