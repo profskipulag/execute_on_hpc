@@ -18,8 +18,8 @@ spack env activate dtcv4-env -p
 ```
 ... add the custom repository for packages missing from the default spack install ...
 
+```
 spack repo add dtcv4-repo
-
 ```
 
 And finaly, concretize and install
